@@ -50,9 +50,7 @@ USER nextjs
 EXPOSE 3000
 
 ENV PORT=3000
-# Thiết lập biến môi trường mặc định trên Docker (Có thể ghi đè lúc docker run -e)
-ENV ADMIN_EMAIL=admin@example.com
-ENV ADMIN_PASSWORD=password123
+ENV HOSTNAME="0.0.0.0"
 
 # server.js is created by next build from the standalone output
 # https://nextjs.org/docs/pages/api-reference/next-config-js/output
